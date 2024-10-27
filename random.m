@@ -1,0 +1,10 @@
+n = 50;                    
+min_val = 0;               
+max_val = 100;             
+random_numbers = min_val + (max_val - min_val) * rand(1, n);
+figure;
+plot(random_numbers, 'b-o', 'LineWidth', 1.5, 'MarkerSize', 6);
+xlabel('Index');
+ylabel('Random Value');
+title('Sequence of Random Numbers');
+grid on;
